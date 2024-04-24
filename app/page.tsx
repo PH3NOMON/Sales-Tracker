@@ -1,8 +1,9 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { AppLayout } from "@/components/AppLayout";
 
 export default function Home() {
   return (
-    <h2>Sales Tracker</h2>
+    <AppLayout>Dashboard</AppLayout>
   );
 }

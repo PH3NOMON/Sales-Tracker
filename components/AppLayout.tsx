@@ -1,7 +1,7 @@
 'use client';
 import { AppShell, Box, Burger, Group, Text } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
-// import { Navbar } from './Navbar/Navbar';
+import { Navbar } from './Navbar/Navbar';
 
 interface Props {
   children: React.ReactNode;
@@ -36,13 +36,12 @@ export function AppLayout({ children }: Props) {
             size="sm"
           />
           <Text size="lg" fw="bold">
-            Profit Pulse
+            Sales Tracker
           </Text>
         </Group>
       </AppShell.Header>
-      <AppShell.Navbar p="md">
-        Navbar
-        {/* <Navbar /> */}
+      <AppShell.Navbar p="md"> 
+        <Navbar />
       </AppShell.Navbar>
       <AppShell.Main>
         <Box m="md">{children}</Box>
